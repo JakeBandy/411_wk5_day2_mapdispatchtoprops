@@ -1,10 +1,11 @@
 import { connect } from 'react-redux'
+//import { AddCar } from '../redux/actions'
 import AddCar from '../components/AddCar'
-import { AddCar } from '../redux/actions'
+
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addCar: (car) => dispatch(addCar(car)),
+        addCar: (car) => dispatch(AddCar(car)),
     }
 }
 
